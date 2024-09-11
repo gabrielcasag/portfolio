@@ -122,6 +122,12 @@ const App = function () {
         </section>
 
         <Divisor />
+
+        <section id="contact__section">
+          <h4>
+            Stay in <a href="mailto:gabrielgc.dev@gmail.com">touch</a>...
+          </h4>
+        </section>
       </main>
       <BackToTop />
       <Footer />

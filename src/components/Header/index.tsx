@@ -18,16 +18,16 @@ const Header = forwardRef<HTMLElement, React.PropsWithChildren<unknown>>(
 
         <div className="desktop__menu">
           <nav className="desktop__nav">
-            <a href="" className="menu__item">
+            <a href="#hero__section" className="menu__item">
               {t("header.about")}
             </a>
-            <a href="" className="menu__item">
+            <a href="#experience__section" className="menu__item">
               {t("header.experience")}
             </a>
-            <a href="" className="menu__item">
+            <a href="#projects__section" className="menu__item">
               {t("header.projects")}
             </a>
-            <a href="" className="menu__item">
+            <a href="#contact__section" className="menu__item">
               {t("header.contact")}
             </a>
             <LanguageSwitcher />
