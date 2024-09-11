@@ -1,20 +1,20 @@
 import "./styles.css";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   variant: "accent" | "shine";
   label: string;
 }
 
 const Button = ({ label, variant, ...rest }: ButtonProps) => {
   return (
-    <button
-      type="button"
+    <a
+      role="button"
       className={`button ${variant}`}
       aria-label={label}
       {...rest}
     >
       {label}
-    </button>
+    </a>
   );
 };
 

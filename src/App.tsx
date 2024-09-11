@@ -61,8 +61,17 @@ const App = function () {
             <p>{t("hero.description")}</p>
 
             <div className="buttons__container">
-              <Button label={t("buttons.downloadCV")} variant="shine" />
-              <Button label={t("buttons.contact")} variant="accent" />
+              <Button
+                label={t("buttons.downloadCV")}
+                variant="shine"
+                href="/curriculum.pdf"
+                target="_blank"
+              />
+              <Button
+                label={t("buttons.contact")}
+                variant="accent"
+                href="mailto:gabrielgc.dev@gmail.com"
+              />
             </div>
           </div>
         </section>

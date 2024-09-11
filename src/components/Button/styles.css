@@ -7,6 +7,8 @@
   cursor: pointer;
   border-radius: var(--radius);
   font-weight: bold;
+  font-size: 0.875rem;
+  font-family: inherit;
   transition: filter 200ms ease-in;
 
   &:hover {
