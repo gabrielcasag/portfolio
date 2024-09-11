@@ -1,0 +1,33 @@
+.button {
+  background: transparent;
+  border: none;
+  box-shadow: rgb(51 51 51 / 70%) 0px 0px 6px;
+  display: flex;
+  padding: var(--space-md) var(--space-lg);
+  cursor: pointer;
+  border-radius: var(--radius);
+  font-weight: bold;
+  transition: filter 200ms ease-in;
+
+  &:hover {
+    filter: brightness(110%);
+  }
+}
+
+.button.shine {
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    120deg,
+    var(--background) 45%,
+    rgba(40, 48, 60, 0.5) 55%,
+    var(--background) 65%
+  );
+
+  animation: buttonShine 2s linear infinite;
+}
+
+.button.accent {
+  background: linear-gradient(115deg, var(--accent), var(--secondary) 45%);
+  color: var(--black);
+}

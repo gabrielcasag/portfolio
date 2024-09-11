@@ -1,0 +1,73 @@
+/* home */
+#hero__section {
+  text-align: center;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: var(--space-2xl) 0;
+}
+
+#hero__section #hand__emoji {
+  display: inline-block;
+  transform-origin: 65% 80%;
+  will-change: transform;
+  animation: shake 5s ease 1s infinite;
+}
+
+#hero__section > div {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  h3 {
+    margin-top: var(--space-sm);
+    font-weight: 500;
+  }
+
+  p {
+    margin-top: var(--space-md);
+    opacity: 0.9;
+  }
+}
+
+#hero__section .buttons__container {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--space-2xl);
+}
+
+/* 
+Experience and Techs Section 
+*/
+/* #experience__section {
+  margin-top: 5rem;
+} */
+
+#experience__section .card__grid {
+  margin-top: var(--space-xl);
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#experience__section #stack__container {
+  margin-top: var(--space-md);
+  display: flex;
+  column-gap: 1rem;
+}
+
+#projects__section .projects__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 60%;
+  margin: 40px auto;
+}
