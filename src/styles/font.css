@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "SUSE";
+  src: local("SUSE-VariableFont_wght"),
+    url("../assets/fonts/SUSE-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter-VariableFont"),
+    url("../assets/fonts/Inter-VariableFont.ttf");
+}

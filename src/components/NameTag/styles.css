@@ -11,7 +11,12 @@
   animation: textShine 8s ease-in-out infinite alternate;
   transition: filter 300ms;
 
+  font-family: "SUSE";
+  text-transform: uppercase;
+
+  cursor: default;
+
   &:hover {
-    filter: brightness(1.15);
+    filter: brightness(110%);
   }
 }

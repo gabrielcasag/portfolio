@@ -27,7 +27,7 @@ export const translationPb = {
     construct: "Em construção...",
     title: "Alguns dos meus projetos",
     see_code: "Ver o código",
-    see_demo: "Ver uma demonstração",
+    see_demo: "Ver uma demo",
     dolla: {
       title: "Dolla Smooth Scroll",
       description:

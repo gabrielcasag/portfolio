@@ -2,6 +2,12 @@ import "./styles/app.css";
 
 import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaSoundcloud,
+  FaYoutube,
+} from "react-icons/fa";
 
 import { experiencesEn } from "./assets/experiences";
 import BackToTop from "./components/BackToTop";
@@ -61,16 +67,20 @@ const App = function () {
 
             <div className="buttons__container">
               <Button
-                label={t("buttons.downloadCV")}
                 variant="shine"
+                aria-label={t("buttons.downloadCV")}
                 href="/curriculum.pdf"
                 target="_blank"
-              />
+              >
+                {t("buttons.downloadCV")}
+              </Button>
               <Button
-                label={t("buttons.contact")}
+                aria-label={t("buttons.contact")}
                 variant="accent"
                 href="mailto:gabrielgc.dev@gmail.com"
-              />
+              >
+                {t("buttons.contact")}
+              </Button>
             </div>
           </div>
         </section>
@@ -128,8 +138,18 @@ const App = function () {
           </h4>
 
           <div className="social__links">
-            <a href=""></a>
-            <a href=""></a>
+            <Button href="https://linkedin.com/in/gabrielcasag" target="_blank">
+              <FaLinkedinIn size={18} />
+            </Button>
+            <Button href="https://github.com/gabrielcasag" target="_blank">
+              <FaGithub size={18} />
+            </Button>
+            <Button href="https://www.youtube.com/@gbrl808" target="_blank">
+              <FaYoutube size={18} />
+            </Button>
+            <Button href="https://soundcloud.com/gbondtrack" target="_blank">
+              <FaSoundcloud size={18} />
+            </Button>
           </div>
         </section>
       </main>
