@@ -1,8 +1,8 @@
+import "./styles.css";
+
 import { useState } from "react"; // Importando useState
 import { useTranslation } from "react-i18next";
-
-import "./styles.css";
-import { ChevronDown, LanguagesIcon } from "lucide-react";
+import { LuChevronDown, LuLanguages } from "react-icons/lu";
 
 const languages = {
   en: { nativeName: "English" },
@@ -29,8 +29,8 @@ const LanguageSwitcher = () => {
         onClick={togglePopup}
         onMouseEnter={togglePopup}
       >
-        <LanguagesIcon size={20} />
-        <ChevronDown size={14} />
+        <LuLanguages size={20} />
+        <LuChevronDown size={14} />
       </button>
 
       {isOpen && ( // Renderiza o popup se isOpen for true

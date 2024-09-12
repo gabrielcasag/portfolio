@@ -1,10 +1,10 @@
+import "./styles.css";
+
 import { forwardRef } from "react";
 import { useTranslation } from "react-i18next";
 
-import NameTag from "../NameTag";
 import LanguageSwitcher from "../LanguageSwitcher";
-
-import "./styles.css";
+import NameTag from "../NameTag";
 
 const Header = forwardRef<HTMLElement, React.PropsWithChildren<unknown>>(
   function (_, ref) {

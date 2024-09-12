@@ -1,17 +1,16 @@
+import "./styles/app.css";
+
 import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
+import { experiencesEn } from "./assets/experiences";
+import BackToTop from "./components/BackToTop";
 import Button from "./components/Button";
 import Divisor from "./components/Divisor";
 import ExperienceCard from "./components/ExperienceCard";
-import NameTag from "./components/NameTag";
-import Header from "./components/Header";
-import BackToTop from "./components/BackToTop";
 import Footer from "./components/Footer";
-
-import { experiencesEn } from "./assets/experiences";
-
-import "./styles/app.css";
+import Header from "./components/Header";
+import NameTag from "./components/NameTag";
 import ProjectsCard from "./components/ProjectsCard";
 
 const App = function () {
@@ -127,6 +126,11 @@ const App = function () {
           <h4>
             Stay in <a href="mailto:gabrielgc.dev@gmail.com">touch</a>...
           </h4>
+
+          <div className="social__links">
+            <a href=""></a>
+            <a href=""></a>
+          </div>
         </section>
       </main>
       <BackToTop />

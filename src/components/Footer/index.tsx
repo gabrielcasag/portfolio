@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "react";
-
 import "./styles.css";
+
+import { useEffect, useRef } from "react";
 
 const Footer = () => {
   const footerRef = useRef<HTMLDivElement>(null); // Adicionando useRef

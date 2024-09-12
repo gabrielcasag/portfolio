@@ -1,7 +1,7 @@
-import { useTranslation } from "react-i18next";
-
 import "./styles.css";
-import { CodeXml, ScanEye } from "lucide-react";
+
+import { useTranslation } from "react-i18next";
+import { LuCode2, LuEye } from "react-icons/lu";
 
 interface ProjectsCardProps {
   title: string;
@@ -27,7 +27,7 @@ const ProjectsCard = ({
           <small>
             <a href={codeURL} target="_blank">
               {t("projects.see_code")}
-              <CodeXml size={16} />
+              <LuCode2 size={16} />
             </a>
           </small>
         )}
@@ -35,7 +35,7 @@ const ProjectsCard = ({
           <small>
             <a href={demoURL} target="_blank">
               {t("projects.see_demo")}
-              <ScanEye size={16} />
+              <LuEye size={16} />
             </a>
           </small>
         )}

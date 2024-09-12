@@ -47,6 +47,10 @@ article {
     color: var(--foreground);
     border-radius: var(--radius);
     padding: 0.15rem 0.25rem;
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   &:hover {
