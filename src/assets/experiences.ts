@@ -11,7 +11,7 @@ interface Experience {
   }>;
 }
 
-export const experiencesPt: Array<Experience> = [
+export const experiencesPb: Array<Experience> = [
   {
     id: 1, // Adicionado ID
     jobTitle: "Senior Software Engineering Analyst",

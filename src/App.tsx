@@ -9,7 +9,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-import { experiencesEn } from "./assets/experiences";
+import { experiencesEn, experiencesPb } from "./assets/experiences";
 import BackToTop from "./components/BackToTop";
 import Button from "./components/Button";
 import Divisor from "./components/Divisor";
@@ -20,8 +20,10 @@ import NameTag from "./components/NameTag";
 import ProjectsCard from "./components/ProjectsCard";
 
 const App = function () {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
+  const currentLanguage = i18n.language;
+  const experiences = currentLanguage == "pb" ? experiencesPb : experiencesEn;
   const headerRef = useRef<HTMLDivElement>(null);
   const experienceSectionRef = useRef<HTMLDivElement>(null);
   const lastScrollY = useRef<number>(window.scrollY); // Usar useRef para armazenar lastScrollY
@@ -91,7 +93,7 @@ const App = function () {
           <h2>{t("experience.title")}</h2>
 
           <div className="card__grid">
-            {experiencesEn.map((experience) => {
+            {experiences.map((experience) => {
               return <ExperienceCard key={experience.id} {...experience} />;
             })}
           </div>
