@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { forwardRef } from "react";
+import { forwardRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import LanguageSwitcher from "../LanguageSwitcher";
@@ -9,6 +9,12 @@ import NameTag from "../NameTag";
 const Header = forwardRef<HTMLElement, React.PropsWithChildren<unknown>>(
   function (_, ref) {
     const { t } = useTranslation();
+
+    const [menuIsOpen, setMenuIsOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+      setMenuIsOpen((prev) => !prev);
+    };
 
     return (
       <header ref={ref}>
@@ -34,12 +40,16 @@ const Header = forwardRef<HTMLElement, React.PropsWithChildren<unknown>>(
           </nav>
         </div>
 
-        <button className="mobile__menu__button" aria-label="Menu">
+        <button
+          className="mobile__menu__button"
+          aria-label="Menu"
+          onClick={toggleMobileMenu}
+        >
           <span></span>
           <span></span>
         </button>
 
-        <div className="mobile__menu">
+        <div className={`mobile__menu ${menuIsOpen && "active"}`}>
           <nav>
             <a href="" className="menu__item">
               {t("header.about")}
@@ -53,10 +63,7 @@ const Header = forwardRef<HTMLElement, React.PropsWithChildren<unknown>>(
             <a href="" className="menu__item">
               {t("header.contact")}
             </a>
-            {/* <LanguageSelector
-            showFlag={true}
-            className="language__selector menu__item"
-          /> */}
+            <LanguageSwitcher />
           </nav>
         </div>
       </header>
