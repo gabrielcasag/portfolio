@@ -48,6 +48,13 @@ export const translationPb = {
         "Pasta EFI com bootloader OpenCore para usar MacOS no Lenovo Ideapad 330",
     },
   },
+  contact: {
+    stayIn: "Mantenha o",
+    touch: "contato",
+  },
+  footer: {
+    rights: "Todos os direitos reservados",
+  },
   backtotop: {
     label: "Voltar para o topo",
     title: "Clique aqui para voltar ao topo",

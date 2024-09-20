@@ -1,9 +1,11 @@
 import "./styles.css";
 
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const footerRef = useRef<HTMLDivElement>(null); // Adicionando useRef
+  const { t } = useTranslation();
 
   useEffect(() => {
     let ticking = false;
@@ -43,8 +45,8 @@ const Footer = () => {
   return (
     <footer ref={footerRef}>
       <div className="content">
-        <small>Copyright {new Date().getFullYear()}</small>
-        {/* <small></small> */}
+        <small>Copyright {new Date().getFullYear()} - gabrielcasag</small>
+        <small>{t("footer.rights")} ©️</small>
       </div>
     </footer>
   );

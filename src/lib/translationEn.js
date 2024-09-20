@@ -48,6 +48,13 @@ export const translationEn = {
         "EFI folder with OpenCore bootloader for use MacOS on Lenovo Ideapad 330",
     },
   },
+  contact: {
+    stayIn: "Stay in",
+    touch: "touch",
+  },
+  footer: {
+    rights: "All rights reserved",
+  },
   backtotop: {
     label: "Back to top",
     title: "Click here to back to top",

@@ -136,7 +136,8 @@ const App = function () {
 
         <section id="contact__section">
           <h4>
-            Stay in <a href="mailto:gabrielgc.dev@gmail.com">touch</a>...
+            {t("contact.stayIn")}{" "}
+            <a href="mailto:gabrielgc.dev@gmail.com">{t("contact.touch")}</a>...
           </h4>
 
           <div className="social__links">
